@@ -11,23 +11,19 @@ TOKEN = "7758801891:AAEBgQqHVwSn5evHHpS204WYe77edZ3-BSM"
 CHANNELS = ["@me_yanvarlik", "@nosirov_mn"]
 
 # ✅ Kino ma'lumotlar bazasi
-movies = movies = {
-    "1": {
-        "title": "Titanic (1997)",
-        "url": "https://t.me/me_yanvarlik/206"
-    },
-    "2": {
-        "title": "Tashkent city yong'ini (2025)",
-        "url": "https://t.me/me_yanvarlik/207"
-    },
-    "3": {
-        "title": "Drugim bilan (2025)",
-        "url": "https://t.me/me_yanvarlik/215"
-    },
-    "4": {
-        "title": "172 kun (2025)",
-        "url": "https://t.me/kino471/5"
-}}
+
+import json
+
+# JSON fayldan kinolarni yuklash
+def load_movies():
+    try:
+        with open("movies.json", "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception as e:
+        print("❌ Kino bazasini yuklashda xatolik:", e)
+        return {}
+
+movies = load_movies()
 
 
 # ✅ Bot va Dispatcher yaratamiz
