@@ -1,12 +1,15 @@
 import asyncio
 import logging
+import os
+from dotenv import load_dotenv
 from aiogram import Bot, Dispatcher, types
 from aiogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from aiogram.filters import Command
 from aiogram import Router
 
 # ✅ Bot tokenini o‘rnating
-TOKEN = "7758801891:AAEBgQqHVwSn5evHHpS204WYe77edZ3-BSM"
+load_dotenv()
+TOKEN = os.getenv("BOT_TOKEN")
 # ✅ Obuna tekshirish uchun kanallar
 CHANNELS = ["@me_yanvarlik", "@nosirov_mn"]
 
@@ -80,16 +83,23 @@ async def send_movie(message: Message):
         movie_id = message.text.strip()
         if movie_id in movies:
             movie = movies[movie_id]
+            caption = (
+                f"🎬 Kino nomi: {movie['title']}\n"
+                f"📅 Yili: {movie['year']}\n"
+                f"📽 Tasvir sifati: {movie['quality']}\n"
+                f"⏱ Davomiyligi: {movie['duration']}\n"
+                f"👤 Takliflar uchun: {movie['user']}\n"
+                f"📡 Manba: {movie['source']}"
+            )
             await message.answer_video(
                 movie["url"],
-                caption=f"🎬 {movie['title']}"
+                caption=caption
             )
         else:
             await message.answer("😔 Kechirasiz, bu raqamga mos kino topilmadi.")
     else:
         text = "Botdan foydalanish uchun quyidagi kanallarga obuna bo‘lishingiz kerak:"
         await message.answer(text, reply_markup=check_subscription_keyboard())
-
 
 # ✅ Obuna tekshirish tugmasi bosilganda
 @router.callback_query(lambda call: call.data == "check_subscription")
