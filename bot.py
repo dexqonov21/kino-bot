@@ -87,7 +87,7 @@ async def send_movie(message: Message):
                 f"🎬 Kino nomi: {movie['title']}\n"
                 f"📅 Yili: {movie['year']}\n"
                 f"📽 Tasvir sifati: {movie['quality']}\n"
-                f"⏱ Davomiyligi: {movie['duration']}\n"
+                f"⏱ + Malumot: {movie['duration']}\n"
                 f"👤 Takliflar uchun: {movie['user']}\n"
                 f"📡 Manba: {movie['source']}"
             )
