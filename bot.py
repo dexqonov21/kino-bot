@@ -11,7 +11,7 @@ from aiogram import Router
 load_dotenv()
 TOKEN = os.getenv("BOT_TOKEN")
 # ✅ Obuna tekshirish uchun kanallar
-CHANNELS = ["@me_yanvarlik", "@nosirov_mn"]
+CHANNELS = ["@me_yanvarlik"]
 
 # ✅ Kino ma'lumotlar bazasi
 
