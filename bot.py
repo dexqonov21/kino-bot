@@ -63,7 +63,7 @@ async def send_welcome(message: Message):
     user_id = message.from_user.id
 
     # Foydalanuvchini ro‘yxatga olish (ixtiyoriy, agar foydalanuvchi ID saqlasangiz)
-    # save_user_id(user_id)  # ← Agar kerak bo‘lsa, bu qatorni oching
+    #  save_user_id(user_id)  # ← Agar kerak bo‘lsa, bu qatorni oching
 
     not_subscribed = await check_subscription(user_id)
 
