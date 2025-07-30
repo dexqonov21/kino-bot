@@ -1,5 +1,5 @@
 {
-  "1": {
+  "510": {
     "title": "Bamblbi",
     "year": "2018",
     "quality": "1080 HD",
@@ -8,40 +8,68 @@
     "url": "https://t.me/kino471/7",
     "user": "@dexqonov21"
   },
-  "2": {
-    "title": "Anqara",
+  "500": {
+    "title": "S-Chiziq 1-qisim",
     "year": "2025",
     "quality": "HD",
-    "duration": "10 soniya",
+    "duration": "49 min",
     "source": "@kino471bot",
-    "url": "https://t.me/me_yanvarlik/207",
+    "url": "https://t.me/kino471/10",
     "user": "@dexqonov21"
   },
-    "3": {
-    "title": "Perival",
+    "501": {
+    "title": "S-Chiziq 2-qisim",
     "year": "2025",
     "quality": "HD",
-    "duration": "12 soniya",
+    "duration": "50 min",
     "source": "@kino471bot",
-    "url": "https://t.me/me_yanvarlik/215",
+    "url": "https://t.me/kino471/11",
     "user": "@dexqonov21"
   },
-    "4": {
-    "title": "172 kun",
+    "502": {
+    "title": "S-Chiziq 3-qisim",
     "year": "2025",
     "quality": "HD",
-    "duration": "1:51 soat",
+    "duration": "55 min",
     "source": "@kino471bot",
-    "url": "https://t.me/kino471/5",
+    "url": "https://t.me/kino471/12",
     "user": "@dexqonov21"
   },
-    "5": {
-    "title": "Namangan",
+    "503": {
+    "title": "S-Chiziq 4-qisim",
     "year": "2025",
     "quality": "HD",
-    "duration": "5 soniya",
+    "duration": "55 min",
     "source": "@kino471bot",
-    "url": "https://t.me/me_yanvarlik/21",
+    "url": "https://t.me/kino471/13",
     "user": "@dexqonov21"
     }
+,
+    "504": {
+    "title": "S-Chiziq 5-qisim",
+    "year": "2025",
+    "quality": "HD",
+    "duration": "50 min",
+    "source": "@kino471bot",
+    "url": "https://t.me/kino471/14",
+    "user": "@dexqonov21"
+    }
+
+,
+    "505": {
+    "title": "S-Chiziq 6-qisim",
+    "year": "2025",
+    "quality": "HD",
+    "duration": "50 min",
+    "source": "@kino471bot",
+    "url": "https://t.me/kino471/15",
+    "user": "@dexqonov21"
+    }
+
+
+
+
+
+
+
 }
